@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_pen"
+        android:title="编辑"
+        android:icon="@mipmap/btn_home_publish_nor"
+        android:orderInCategory="200"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_notice"
+        android:title="声音"
+        android:icon="@mipmap/btn_home_notice_nor"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+
+        android:id="@+id/action_item1"
+        android:title="刷新"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_item2"
+        android:title="夜间模式"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_item3"
+        android:title="设置"
+        app:showAsAction="never" />
+</menu>

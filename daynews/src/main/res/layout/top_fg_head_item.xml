@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#12000000"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|left"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:text="真人秀专职洗白？可能没急急急那么容易"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

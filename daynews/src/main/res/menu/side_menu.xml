@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        checkableBehavior="single"
+        android:id="@+id/head_page"
+        android:icon="@mipmap/icon_sidebar_home"
+        android:title="首页" />
+    <item
+        checkableBehavior="single"
+
+        android:id="@+id/side_rank"
+        android:icon="@mipmap/icon_sidebar_rank"
+        android:title="排行榜" />
+    <item
+        checkableBehavior="single"
+
+        android:id="@+id/side_chanel"
+        android:icon="@mipmap/icon_sidebar_column"
+        android:title="频道" />
+    <item
+        checkableBehavior="single"
+
+        android:id="@+id/side_search"
+        android:icon="@mipmap/icon_sidebar_search"
+        android:title="搜索" />
+    <item
+        checkableBehavior="single"
+        android:id="@+id/side_setting"
+        android:icon="@mipmap/icon_sidebar_setting"
+        android:title="设置" />
+    <item
+        checkableBehavior="single"
+        android:id="@+id/side_offline"
+        android:icon="@mipmap/icon_setting_offline"
+        android:title="离线下载" />
+    <group android:id="@+id/gp_night">
+        <item
+            checkableBehavior="single"
+            android:id="@+id/side_night"
+            android:icon="@mipmap/icon_sidebar_night"
+            android:title="夜间模式" />
+    </group>
+
+</menu>

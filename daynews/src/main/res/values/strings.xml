@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">暴走日报</string>
+    <string name="drawer_open">
+
+    </string>
+    <string name="drawer_close">
+    </string>
+    <array name="side_item">
+        <item>首页</item>
+        <item>排行榜</item>
+        <item>频道</item>
+        <item>搜索</item>
+        <item>设置</item>
+        <item>离线下载</item>
+        <item>夜间模式</item>
+    </array>
+    <array name="tab_title">
+        <item>首页</item>
+        <item>用户投稿</item>
+        <item>视频</item>
+    </array>
+    <array name="rank_tab_title">
+        <item>阅读</item>
+        <item>赞</item>
+        <item>评论</item>
+    </array>
+</resources>
