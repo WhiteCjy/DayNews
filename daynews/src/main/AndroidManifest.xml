@@ -40,12 +40,6 @@
         <activity android:name=".activitys.UserNameActivity" />
         <activity android:name=".activitys.CommentActivity" />
         <activity android:name=".activitys.ReadActivity" />
-        <activity
-            android:name="io.vov.vitamio.activity.InitActivity"
-            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".activitys.SettingActivity" />
         <activity android:name=".activitys.MsgWebActivity" />
         <activity android:name=".activitys.DownloadActivity" />
