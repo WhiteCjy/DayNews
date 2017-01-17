@@ -97,8 +97,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //设置ActionBar的指示图标可见，设置ActionBar上的应用图标位置处可以被单击
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //侧滑栏监听器
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawLayout, mToolbar, R.string.drawer_open,
-                R.string.drawer_close);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawLayout, mToolbar, R.string.drawer_open, R.string.drawer_close);
         mDrawerToggle.syncState();
         mDrawLayout.addDrawerListener(mDrawerToggle);
     }
@@ -113,7 +112,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Toast.makeText(this, "点击了"+item.getTitle().toString(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
             case R.id.action_pen:
                 Toast.makeText(this, "启动popupwidndow", Toast.LENGTH_SHORT).show();
