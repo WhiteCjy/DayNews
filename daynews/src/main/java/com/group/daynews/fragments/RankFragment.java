@@ -76,7 +76,6 @@ public class RankFragment extends Fragment implements TabLayout.OnTabSelectedLis
     public void onTabSelected(TabLayout.Tab tab) {
         int position = tab.getPosition();
         RankChildFragment fragment = (RankChildFragment) mFragments.get(position);
-        System.out.println("位置更新了" + position);
         fragment.upPosition(position);
 
     }

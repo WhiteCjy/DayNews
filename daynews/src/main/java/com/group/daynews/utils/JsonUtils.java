@@ -106,7 +106,6 @@ public class JsonUtils {
                 VideoDataBean videoBean = new VideoDataBean(comment_count, display_type, document_id, file_url, image, play_count, play_count_string, play_time,
                         publish_time, share_url, title, vote_count);
                 data.add(videoBean);
-                System.out.println(videoBean);
             }
             timestamp_video = jsonObject.getInt("timestamp");
         } catch (JSONException e) {

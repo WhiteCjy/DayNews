@@ -211,7 +211,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     long waitTime = 2000;
     long touchTime = 0;
-
     @Override
     public void onBackPressed() {
         long currentTime = System.currentTimeMillis();

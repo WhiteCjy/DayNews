@@ -9,9 +9,6 @@ import java.util.ArrayList;
  */
 
 public interface ISideChannel {
-
     void updateView(ArrayList<SideChannelBean> list, int model);
-
     void showMsg(String msg);
-
 }

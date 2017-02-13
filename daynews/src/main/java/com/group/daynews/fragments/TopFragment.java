@@ -75,7 +75,6 @@ public class TopFragment extends Fragment implements ITopView, ViewPager.OnPageC
                     currentItem++;
                     currentItem = currentItem % size;
                     head_vp.setCurrentItem(currentItem);
-                    Log.d("guige", "handleMessage: " + currentItem);
                     vpAdapter.notifyDataSetChanged();
                     mHandler.sendEmptyMessageDelayed(0, 5000);
                 }
@@ -131,7 +130,6 @@ public class TopFragment extends Fragment implements ITopView, ViewPager.OnPageC
     private void initList(ArrayList<TopDataBean> list) {
         for (int i = 0; i < list.size(); i++) {
             int type = list.get(i).getType();
-            Log.d("guige", "onSuccess: " + list.get(i).getTitle());
             if (type == 0) {
                 headLists.add(list.get(i));
             } else {
@@ -222,7 +220,6 @@ public class TopFragment extends Fragment implements ITopView, ViewPager.OnPageC
             case TopPrecenter.REFRESH_MODEL:
                 refreshList(list);
                 top_refresh.setRefreshing(false);
-                Log.d("qwer", "updateView: qwer");
                 break;
             case TopPrecenter.LOADING_MODEL:
                 contantLists.addAll(list);
@@ -237,13 +234,10 @@ public class TopFragment extends Fragment implements ITopView, ViewPager.OnPageC
         for (int i = 0; i < list.size(); i++) {
             TopDataBean bean = list.get(i);
             int type = bean.getType();
-            Log.d("asdf", "refreshList: " + bean.getTitle());
             if (type == 0) {
                 if (headLists.contains(bean)) {
-                    Log.d("asdf", "refreshList: 555555");
                     continue;
                 }
-                Log.d("asdf", "refreshList: 666666");
                 headLists.add(bean);
                 int size = headLists.size();
                 headLists.remove(size - 1);

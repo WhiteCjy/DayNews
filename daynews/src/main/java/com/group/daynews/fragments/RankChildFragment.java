@@ -79,7 +79,6 @@ public class RankChildFragment extends Fragment implements SwipeRefreshLayout.On
         x.http().get(rp, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                System.out.println("数据请求成功");
                 rankData = (ArrayList<RankDataBean>) JsonUtils.getRankList(result);
                 rankAdapter.setDatas(rankData);
             }
